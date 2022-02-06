@@ -1,4 +1,4 @@
-package com.TenmaFrank.diceroller
+package com.tenmafrank.diceroller
 
 import org.junit.Test
 
