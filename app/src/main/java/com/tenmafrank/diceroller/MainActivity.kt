@@ -14,8 +14,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
-        binding.DiceOneButton.setOnClickListener {
-            binding.DiceOneTextview.text = "${dice()} !"
+        binding.diceOneButton.setOnClickListener {
+            binding.diceOneTextView.text = "${dice()} !"
+        }
+
+        binding.diceTwoButton.setOnClickListener {
+            binding.diceOneTextView.text = "${dice()} !"
+            binding.diceTwoTextView.text = "${dice()} !"
         }
 
     }

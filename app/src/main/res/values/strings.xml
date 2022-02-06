@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">DiceRoller</string>
     <string name="dice_one_label">1 Dice!</string>
+    <string name="dice_two_label">2 Dice</string>
     <string name="dice_one_button_label">Roll a Dice!</string>
+    <string name="Dice_two_button_label">Roll Two Dices!</string>
 </resources>
