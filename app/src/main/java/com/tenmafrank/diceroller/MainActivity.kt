@@ -14,20 +14,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
+        val firstDice = Dice()
+
         binding.diceOneButton.setOnClickListener {
-            binding.diceOneTextView.text = "${dice()} !"
+            binding.diceOneImageView.setImageResource(firstDice.rollDice(6))
         }
 
         binding.diceTwoButton.setOnClickListener {
-            binding.diceOneTextView.text = "${dice()} !"
-            binding.diceTwoTextView.text = "${dice()} !"
+            binding.diceOneImageView.setImageResource(firstDice.rollDice(6))
+            binding.diceTwoImageView.setImageResource(firstDice.rollDice(6))
         }
 
     }
-
-    private fun dice() : Int{
-        val sides = 6
-        return (1..sides).random()
-    }
-
 }
